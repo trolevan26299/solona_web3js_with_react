@@ -36,7 +36,7 @@ function View() {
     try {
       setLoading(true)
       if (publicKey && recipient) {
-        const recipientPublicKey = new PublicKey(recipient) // Use recipient public key
+        const recipientPublicKey = new PublicKey(recipient)
         const instruction = SystemProgram.transfer({
           fromPubkey: publicKey,
           toPubkey: recipientPublicKey,
