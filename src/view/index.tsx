@@ -1,4 +1,3 @@
-import IonIcon from '@sentre/antd-ionicon'
 import { Button, Col, Image, Input, Layout, Row, Space, Typography } from 'antd'
 import { useConnection, useWallet } from '@solana/wallet-adapter-react'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
@@ -88,15 +87,6 @@ function View() {
           <Space direction="vertical" size={24}>
             <Image src={logo} preview={false} width={256} />
             <Typography.Title level={1}>React + Solana = DApp</Typography.Title>
-            <Typography.Text type="secondary">
-              <Space>
-                <IonIcon name="logo-react" />
-                +
-                <IonIcon name="logo-solana" />
-                =
-                <IonIcon name="rocket" />
-              </Space>
-            </Typography.Text>
             <Typography.Title>
               My Balance: {balance / 10 ** 9} SOL
             </Typography.Title>
