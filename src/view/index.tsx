@@ -12,7 +12,7 @@ function View() {
   const { publicKey, sendTransaction } = useWallet()
   const [balance, setBalance] = useState(0)
   const [loading, setLoading] = useState(false)
-  const [recipient, setRecipient] = useState('') // New state for recipient
+  const [recipient, setRecipient] = useState('')
 
   const getMyBalance = useCallback(async () => {
     if (!publicKey) return setBalance(0)
